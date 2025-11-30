@@ -1,0 +1,25 @@
+{
+  "name": "maku",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "run-p --continue-on-error --print-label lint:*",
+    "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
+    "lint:prettier": "prettier --cache --check .",
+    "lint:secretlint": "secretlint --maskSecrets --secretlintignore .gitignore '**/*'",
+    "fix": "run-s --continue-on-error fix:*",
+    "fix:eslint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro --fix",
+    "fix:prettier": "prettier --cache --write ."
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "astro": "^5.16.3",
+    "eslint": "^9.39.1",
+    "prettier": "^3.7.3",
+    "tailwindcss": "^4.1.17"
+  }
+}
